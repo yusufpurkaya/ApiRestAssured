@@ -7,7 +7,7 @@ import org.junit.Before;
 
 public class DummyBaseUrl {
     protected RequestSpecification spec02;
-
+// protected yapmazsan child class lardan ulasamiyoz
     @Before
     public void setUp() {
 

@@ -1,0 +1,36 @@
+
+
+
+
+
+TOKEN İCİN 3 CLASS (bu token alma isini hoca 7.gun son 10 dakkada var hizli yapiyo ama)
+  1-Authentication
+  2-url i tanimladigimiz BaseUrl i child yap
+  3-calisicagin class da ..BaseUrl in child i olsun
+      fakat dikkat edilmesi gereken token ile kullanimda
+
+        spec3.pathParams("bir","tp-customers","iki",114351);
+        Response response=given().spec(spec3).
+ ->       header("Authorization", "Bearer " + generateToken()).   -> iste bu eklenti
+        when().get("/{bir}/{iki}");
+
+DOGRULAMA TURLERİ
+             1
+// Matcher ile dogrulamada
+   response.then().assertThat().body("firstName", equalTo("Della"),
+             2                              "lastName", equalTo("Heaney");
+// JSONPATH ILE
+ JsonPath json = response.jsonPath();
+ Assert.assertEquals("Della",json.getString("firstName"));
+             3
+// De-serialization (Json dan java ya gecis)
+ ve Serialization ( java dan json diline gecis)
+ ile bunun icin actuel ve expected datalar farkli maplere
+// atilir sonra da hard assertion ile dogrulama yapilir
+json dilinde olan bir veriyi map a atmak icin
+
+ Map<String,Object> expectedData=new HashMap<>();
+        expectedData.put("firstName","Alda");
+ Map<String,Object> actuelData=response.as(HashMap.class);
+Assert.assertEquals(expectedData.get("firstName"),actualData.get("firstName"));
+
