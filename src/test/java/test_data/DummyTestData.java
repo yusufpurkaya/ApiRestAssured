@@ -5,6 +5,7 @@ import groovyjarjarantlr.LexerSharedInputState;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DummyTestData {
        /*
@@ -59,5 +60,31 @@ public class DummyTestData {
         expectedData.put("arananyaslar", yaslar);
         expectedData.put("onuncucalisan", onuncu);
         return expectedData;
+    }
+
+    public HashMap<String,Object> setUpRequestBody(){
+        HashMap<String,Object> requestBody=new HashMap<>();
+        requestBody.put("name","Ali Can");
+        requestBody.put("salary","2000");
+        requestBody.put("age","40");
+
+        return requestBody;
+    }
+    public HashMap<String,Object> setUpExpectedData(){
+        HashMap<String,Object> expectedData=new HashMap<>();
+expectedData.put("StatusCode",200);
+expectedData.put("status","success");
+expectedData.put("message","Successfully! Record has been added.");
+
+        //gönderildiğinde,Status kodun 200 olduğunu ve dönen response body nin,
+        //
+        //{
+        //    "status": "success",
+        //    "data": {
+        //    "id":…
+        //},
+        //    "message": "Successfully! Record has been added."
+        //}
+return expectedData;
     }
 }

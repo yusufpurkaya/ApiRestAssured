@@ -1,0 +1,209 @@
+
+
+-03-
+     /*
+    https://restful-booker.herokuapp.com/booking/7 url'ine
+GET request'i yolladigimda
+gelen response'un
+
+status kodunun 200
+ve content type'inin "application/json"
+ve firstname'in "Sally"
+ve lastname'in "Ericsson"
+ve checkin date'in 2018-10-07"
+ve checkout date'in 2020-09-30 oldugunu test edin
+     */
+
+-04-
+        /*
+http://dummy.restapiexample.com/api/v1/employees  url'ine
+ GET request'i yolladigimda gelen response'un
+ status kodunun 200 ve content type'inin "application/json"
+ve employees sayisinin 24
+ve employee'lerden birinin "Ashton Cox"
+ve gelen yaslar icinde 21, 61, ve 23 degerlerinden birinin oldugunu test edin.
+ */
+-05-
+//https://jsonplaceholder.typicode.com/todos/123 url’ine
+//   accept type’i “application/json” olan GET request’i yolladigimda
+//   gelen response’un
+//			status kodunun 200
+//   		ve content type’inin “application/json”
+//			ve Headers’daki “Server” in “cloudflare”
+//			ve response body’deki “userId”’nin 7
+//			ve “title” in “esse et quis iste est earum aut impedit”
+//			ve “completed” bolumunun false oldugunu test edin
+
+-06-
+ //https://restful-booker.herokuapp.com/booking/5 url’ine
+        //accept type’i “application/json” olan GET request’i yolladigimda
+        //gelen response’un
+
+        //status kodunun 200
+        //ve content type’inin “application/json”
+        //ve firstname’in “Jim”
+        //ve totalprice’in 600
+        //ve checkin date’in 2015-06-12"oldugunu test edin
+
+-07-
+//extends RegresInBaseUrl
+    /*
+https://reqres.in/api/users URL request olustur.
+body icerisindeki idsi 5 olan datayi
+1) Matcher CLASS ile
+2) JsonPath ile dogrulayin. q
+*/
+-08-
+ /*
+   http://dummy.restapiexample.com/api/v1/employees             url'inde bulunan
+
+  1) Butun calisanlarin isimlerini consola yazdıralim
+  2) 3. calisan kisinin ismini konsola yazdıralim
+  3) Ilk 5 calisanin adini konsola yazdiralim
+  4) En son calisanin adini konsola yazdiralim
+*/
+-09-
+  //extends DummyBaseUrl
+   /*
+http://dummy.restapiexample.com/api/v1/employee/12 URL'E GiT.
+1) Matcher CLASS ile
+2) JsonPath ile dogrulayin.
+*/
+-10-
+//    http://dummy.restapiexample.com/api/v1/employees
+    //    url ine bir istek gönderildiğinde,
+//    gelen body de,
+     //    5. çalışanın isminin "Airi Satou" olduğunu ,
+     //    6. çalışanın maaşının "372000" olduğunu ,
+     //    Toplam 24 tane çalışan olduğunu,
+     //    "Rhona Davidson" ın employee lerden biri olduğunu
+     //    "21", "23", "61" yaşlarında employeeler olduğunu test edin
+
+-11-  Token ile giris
+
+-12-Token ile giris
+
+-13-
+//http://www.gmibank.com/api/tp-customers/114351 adresindeki müşteri bilgilerini doğrulayın
+    //    “firstName”: “Della”,
+    //    “lastName”: “Heaney”,
+    //    “mobilePhoneNumber”: “123-456-7893”,
+    //    “address”: “75164 McClure Stream”,
+    //    “country” : “USA”
+    //    “state”: “New York43"
+    //    “CREDIT_CARD”,hesabında 69700$ ,
+    //    “CHECKING” hesabında 11190$
+-14-
+/*
+http://www.gmibank.com/api/tp-customers/110472 adresindeki müşteri bilgilerini doğrulayın
+
+"firstName": "Melva",
+"lastName": "Bernhard",
+"email": "chas.kuhlman@yahoo.com"
+"zipCode": "40207"
+
+"country" "name": "San
+"login": "delilah.metz"
+*/
+-15-
+  /*
+https://www.gmibank.com/api/tp-customers/85694
+        "login": "dino.kohler",
+    "firstName": "Winona",
+    "lastName": "Abernathy",
+    "email": "winonaabernathy@gmail.com"
+
+ */
+-16-
+ /*
+   https://jsonplaceholder.typicode.com/todos/7
+
+   {  // bu bilgiler api de json formatinda ama java da okumak istiyorum
+   "userId": 1,
+   "id": 7,
+   "title": "illo expedita consequatur quia in",
+   "completed": false
+}
+    */
+-17-
+ /*
+   http://www.gmibank.com/api/tp-customers/114351 adresindeki müşteri bilgilerini doğrulayın
+
+{
+   "firstName": "Della",
+   "lastName": "Heaney",
+   "email": "ricardo.larkin@yahoo.com",
+   "mobilePhoneNumber": "123-456-7893",
+}
+    */
+-18-
+/*
+http://www.gmibank.com/api/tp-customers/43703
+
+"firstName": "Alda",
+"lastName": "Monahan",
+"middleInitial": "Nichelle Hermann Kohler",
+"email": "com.github.javafaker.Name@7c011174@gmail.com",
+"mobilePhoneNumber": "909-162-8114",
+"city": "St Louis",
+"ssn": "108-53-6655"
+
+1) MATCHERS CLASS
+2) JSON PATH
+3) De-Serialization
+ */
+
+-19-
+/*
+http://dummy.restapiexample.com/api/v1/employees
+1) Status kodunun 200,
+2) 10’dan büyük tüm id'leri ekrana yazdırın ve 10’dan büyük 14 id olduğunu,
+3) 30’dan küçük tüm yaşları ekrana yazdırın ve bu yaşların içerisinde en büyük yaşın 23 olduğunu
+4) Maası 350000 den büyük olan tüm employee name'leri ekrana yazdırın
+     ve bunların içerisinde "Charde Marshall" olduğunu test edin
+*/
+-20-
+ /*
+https://jsonplaceholder.typicode.com/todos/2
+1) Status kodunun 200,
+2) respose body'de,
+         "completed": değerinin false
+         "title": değerinin "quis ut nam facilis et officia qui"
+         "userId" sinin 1 ve
+    header değerlerinden
+         "via" değerinin "1.1 vegur" ve
+         "Server" değerinin "cloudflare" olduğunu test edin…
+*/
+
+
+-21-
+
+        //        https://jsonplaceholder.typicode.com/todos/2
+        //        1) Status kodunun 200,
+        //        2) respose body'de,
+        //         "completed": değerinin false
+        //         "title": değerinin "quis ut nam facilis et officia qui"
+        //         "userId" sinin 1 ve
+        //        header değerlerinden
+        //         "via" değerinin "1.1 vegur" ve
+        //         "Server" değerinin "cloudflare" olduğunu test edin…
+-22-
+/*
+http://dummy.restapiexample.com/api/v1/employees url ine bir istek gönderildiğinde
+Status kodun 200 olduğunu,
+14. Çalışan isminin "Haley Kennedy" olduğunu,
+Çalışan sayısının 24 olduğunu,
+Sondan 3. çalışanın maaşının 675000 olduğunu
+40,21 ve 19 yaslarında çalışanlar olup olmadığını
+10. Çalışan bilgilerinin bilgilerinin aşağıdaki gibi
+
+{
+        "id": 10,
+        "employee_name": "Sonya Frost",
+        "employee_salary": 103600,
+        "employee_age": 23,
+        "profile_image": ""
+ }
+
+  olduğunu test edin.
+*/

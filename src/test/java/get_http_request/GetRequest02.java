@@ -14,8 +14,10 @@ public class GetRequest02 {
         String url="https://reqres.in/api/users";
        Response response= given().when().get(url);
         response.prettyPrint(); // response u yazdirir
-        response.prettyPeek(); // postman da ki header i getirir
 
+        response.prettyPeek(); // postman da ki body ve header i getirir
+
+response.then().log().all(); // bu da body + header i yazdirir
 // header i test
         response.then().assertThat().statusCode(200).// response un status code i 200 mu
                 contentType("application/json; charset=utf-8").

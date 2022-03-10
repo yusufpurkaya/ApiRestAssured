@@ -16,12 +16,14 @@ TOKEN İCİN 3 CLASS (bu token alma isini hoca 7.gun son 10 dakkada var hizli ya
 
 DOGRULAMA TURLERİ
              1
-// Matcher ile dogrulamada
-   response.then().assertThat().body("firstName", equalTo("Della"),
-             2                              "lastName", equalTo("Heaney");
+// Matcher Class ile dogrulamada
+   response.then().assertThat().body("firstName", equalTo("Della"),    (Matchers.equelto   ama equel to silinir ve
+                                    "lastName", equalTo("Heaney");           static yap secilir artik equelto ile yapilir)
+             2
 // JSONPATH ILE
  JsonPath json = response.jsonPath();
  Assert.assertEquals("Della",json.getString("firstName"));
+
              3
 // De-serialization (Json dan java ya gecis)
  ve Serialization ( java dan json diline gecis)
@@ -34,3 +36,5 @@ json dilinde olan bir veriyi map a atmak icin
  Map<String,Object> actuelData=response.as(HashMap.class);
 Assert.assertEquals(expectedData.get("firstName"),actualData.get("firstName"));
 
+             4
+ JSONObject ile
